@@ -12,8 +12,8 @@ import kotlinx.coroutines.launch
 
 class UserViewModel: ViewModel() {
 
-    private val _userList = MutableLiveData<List<DataModel?>?>()
-    val userList: LiveData<List<DataModel?>?> = _userList
+    private val _userList = MutableLiveData<UserModel>()
+    val userList: LiveData<UserModel> = _userList
 
     init {
         getAllUsers()

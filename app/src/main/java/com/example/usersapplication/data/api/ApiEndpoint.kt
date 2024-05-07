@@ -6,7 +6,8 @@ import retrofit2.http.GET
 
 interface ApiEndpoint {
 
+    @GET(ApiDetails.USERS_ENDPOINT)
+//    suspend fun getUsers(): List<DataModel?>?
+    suspend fun getUsers(): UserModel
 
-    @GET
-    suspend fun getUsers(): List<DataModel?>?
 }
