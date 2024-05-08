@@ -72,6 +72,9 @@ dependencies {
     //Koin
     implementation("io.insert-koin:koin-android:3.5.6")
 
+    //Hilt
+//    implementation("com.google.dagger:hilt-android:2.44")
+//    kapt("com.google.dagger:hilt-android-compiler:2.44")
 
 
 
