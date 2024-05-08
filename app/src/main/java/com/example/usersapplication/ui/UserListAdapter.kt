@@ -26,8 +26,8 @@ class UserListAdapter(
 
             binding.apply {
                 Glide.with(itemView.context).load(userItemModel.avatar).placeholder(R.drawable.person_icon).into(ivUserPic)
-                tvId.text = "Id: ${userItemModel.firstName}"
-                tvEmail.text = "Email: ${userItemModel.id.toString()}"
+                tvId.text = "Id: ${userItemModel.id}"
+                tvEmail.text = "Email:\n${userItemModel.email.toString()}"
                 tvFirstname.text  = "Firstname: ${userItemModel.firstName}"
                 tvLastname.text = "Lastname: ${userItemModel.lastName}"
             }
