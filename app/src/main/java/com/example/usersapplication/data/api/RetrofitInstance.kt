@@ -1,5 +1,6 @@
 package com.example.usersapplication.data.api
 
+import com.example.usersapplication.network.UserApiService
 import okhttp3.OkHttpClient
 import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
@@ -19,6 +20,6 @@ object RetrofitInstance {
         .client(okHttpClient)
         .addConverterFactory(converter).build()
 
-    val apiClient = retrofit.create(ApiEndpoint::class.java)
+    val apiClient = retrofit.create(UserApiService::class.java)
 
 }

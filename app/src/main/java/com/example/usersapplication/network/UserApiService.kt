@@ -1,10 +1,10 @@
-package com.example.usersapplication.data.api
+package com.example.usersapplication.network
 
-import com.example.usersapplication.model.DataModel
+import com.example.usersapplication.data.api.ApiDetails
 import com.example.usersapplication.model.UserModel
 import retrofit2.http.GET
 
-interface ApiEndpoint {
+interface UserApiService {
 
     @GET(ApiDetails.USERS_ENDPOINT)
 //    suspend fun getUsers(): List<DataModel?>?
